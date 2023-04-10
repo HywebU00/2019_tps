@@ -1,0 +1,27 @@
+@charset "UTF-8";
+$font06: 0.6em;
+$font07: 0.75em;
+$font08: 0.813em;
+$font09:0.938em;
+$font1:1em;
+$font11:1.125em;
+$font12:1.25em;
+$font13:1.3em;
+$font14:1.4em;
+$font15:1.5em;
+$font18:1.8em;
+$font2:2em;
+$font24:2.4em;
+$font25:2.5em;
+$font3:3em;
+$font4:4em;
+$font5:5em;
+$focus:#90bf00;
+$focus2:#548300;
+$focus3:#FF9C3B;
+$focus4:#CC4D00;
+a:focus,input:focus{
+	// outline: 1px solid $focus!important;
+	// outline-offset: -2px;
+	box-shadow: 0 0px 0px 1px $focus inset!important;
+}

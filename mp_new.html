@@ -1,0 +1,989 @@
+<!DOCTYPE html><html xml:lang="zh-TW" lang="zh-TW" xmlns:user="urn:user-namespace-here" xmlns:lastModified="1519895104000" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:og="http://ogp.me/ns#" xmlns:hyweb="urn:gip-hyweb-com" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>太平山國家森林遊樂區入口網</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="fb:admins" content="1442391089359352">
+<meta property="og:type" content="website">
+<meta property="og:image" content="default_Image">
+<meta name="DC.Title" content="1">
+<meta name="DC.Subject" content="1">
+<meta name="DC.Creator" content="系統使用者">
+<meta name="DC.Description" content="測試">
+<meta name="DC.Publisher" content="林務局羅東林區管理處">
+<meta name="DC.Contributor" content="">
+<meta name="DC.Date" content="2009-05-15 00:00:00.0">
+<meta name="DC.Type" content="文字">
+<meta name="DC.Format" content="">
+<meta name="DC.Identifier" content="">
+<meta name="DC.Relation" content="">
+<meta name="DC.Source" content="">
+<meta name="DC.Language" content="">
+<meta name="DC.Coverage" content="">
+<meta name="DC.Rights" content="">
+<meta name="Category.Theme" content="">
+<meta name="Category.Cake" content="">
+<meta name="Category.Service" content="">
+<link rel="icon" type="image/ico" href="images/favicon.png">
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<link rel="stylesheet" type="text/css" href="assets/module/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="assets/module/slick/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="assets/module/fontello/css/fontello.css">
+<link rel="stylesheet" type="text/css" href="assets/module/fontello/css/animation.css">
+<link rel="stylesheet" type="text/css" href="css/customize.css?ver=1">
+<script type="text/javascript" src="assets/js/jquery-1.11.2.js"></script><script type="text/javascript" src="assets/module/bootstrap-3.3.2/js/bootstrap.min.js"></script><script type="text/javascript" src="assets/js/jquery.lazyload.min.js"></script><script type="text/javascript" src="assets/js/BS3JS.min.js"></script><script type="text/javascript" src="assets/module/slick/slick.js"></script><script type="text/javascript" src="js/slick-addscripts.js"></script><script type="text/javascript" src="assets/js/bootstrap.offcanvas.js"></script><script type="text/javascript" src="assets/js/jquery.scrollUp.js"></script>
+<link rel="stylesheet" type="text/css" href="js/jqueryui/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="js/jqueryui/jquery-ui-timepicker-addon.css">
+<script type="text/javascript" src="js/inputType/popDate.js"></script><script type="text/javascript" src="js/inputType/popDateTime.js"></script><script type="text/javascript" src="js/jquery-ui.min.js"></script><script type="text/javascript" src="js/jquery-ui-timepicker-addon.min.js"></script>
+<style type="text/css">
+		.ui-datepicker-title {
+		    color:black;
+		}
+		</style>
+<script type="text/javascript"> 
+		    $(document).ready(function(e){
+		        $('.search-panel .dropdown-menu').find('a').click(function(e) {
+		            e.preventDefault();
+		            var param = $(this).attr("href").replace("#","");
+		            var concept = $(this).text();
+		            $('.search-panel span#search_concept').text(concept);
+		            $('.input-group #search_param').val(param);
+		        });
+		
+			    
+			    $(function () {
+			          // 預設顯示第一個 Tab
+			          var _showTab = 0;
+			          var $defaultDiv = $('div.tabs').eq(_showTab).addClass('active');
+			          $($defaultDiv.find('a').attr('href')).siblings('div.tab_container').hide();
+			
+			          // 當 li 頁籤被點擊時...
+			          // 若要改成滑鼠移到 li 頁籤就切換時, 把 click 改成 mouseover
+			          $('div.tabs').click(function () {
+			              // 找出 li 中的超連結 href(#id)
+			              var $this = $(this),
+			              _clickTab = $this.find('a').attr('href');
+			              // 把目前點擊到的 li 頁籤加上 .active
+			              // 並把兄弟元素中有 .active 的都移除 class
+			              $this.addClass('active').siblings('.active').removeClass('active');
+			              // 淡入相對應的內容並隱藏兄弟元素
+			              $(_clickTab).stop(false, true).fadeIn().siblings('div.tab_container').hide();
+			
+			              return false;
+			          })
+			          $("#font_l").trigger('click');
+			      });
+			
+			    
+			    function Focus(id) {
+			        $("#" + id).trigger('click');
+			        document.getElementById(id).focus();
+			    }
+			
+			         
+			    $(function () {
+			        $.scrollUp({
+			            scrollName: 'scrollUp', // Element ID
+			            topDistance: '300', // Distance from top before showing element (px)
+			            topSpeed: 300, // Speed back to top (ms)
+			            animation: 'fade', // Fade, slide, none
+			            animationInSpeed: 200, // Animation in speed (ms)
+			            animationOutSpeed: 200, // Animation out speed (ms)
+			            scrollText: 'Scroll to top', // Text for element
+			            activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+			        });
+			    });
+			
+			    $(function(){
+			        $(".FontSmall").click(
+			            function(){
+			                $(".ContentPage").css({fontSize:"90%"});
+			                $("h1").css({fontSize:"35px"});
+			                $("h2").css({fontSize:"28px"});
+			                $("h3").css({fontSize:"22px"});
+			                $("h4").css({fontSize:"15px"});
+			                $("h5").css({fontSize:"11px"});
+			                $("h6").css({fontSize:"10px"});
+			                return false;
+			            
+			                }
+			        )
+			        $(".FontMidium").click(
+			            function(){
+			                $(".ContentPage").css({fontSize:"100%"});
+			                $("h1").css({fontSize:"39px"});
+			                $("h2").css({fontSize:"32px"});
+			                $("h3").css({fontSize:"26px"});
+			                $("h4").css({fontSize:"19px"});
+			                $("h5").css({fontSize:"15px"});
+			                $("h6").css({fontSize:"13px"});
+			                return false;
+			                
+			                }
+			        )
+			        $(".FontLarge").click(
+			            function(){
+			                $(".ContentPage").css({fontSize:"110%"});
+			                $("h1").css({fontSize:"43px"});
+			                $("h2").css({fontSize:"36px"});
+			                $("h3").css({fontSize:"30px"});
+			                $("h4").css({fontSize:"23px"});
+			                $("h5").css({fontSize:"19px"});
+			                $("h6").css({fontSize:"17px"});
+			                return false;   
+			                }
+			        )
+			    })
+			
+			    $('ul.nav li.dropdown').hover(function() {
+			        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+			    }, function() {
+			        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+			    });
+			
+			    $("ul.nav li.dropdown a").focus(function() {
+			        $(this).parent().find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+			    });
+			
+			    $("ul.nav li.dropdown .dropdown-menu li:last-child a").blur(function() {
+			        $('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+			    });
+			
+			    $(function () {
+			        $('.FAQ dd').hide();
+			        $('.FAQ dd:first-of-type').show();
+			        $('.FAQ dt:first-of-type').addClass("Answerclose");
+			
+			        $('.FAQ dt').click(function() {
+			            $('.FAQ dd').slideUp();
+			            $('.FAQ dt').removeClass("Answerclose");
+			
+			            $(this).next().slideDown();
+			            $(this).addClass("Answerclose");
+			            return false;
+			        });
+			    });
+		    
+		    });
+		</script>
+</head>
+<body>
+<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-NWNBM8" height="0" width="0" style="display:none;visibility:hidden" title="google tag manager"></iframe>
+</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	        })(window,document,'script','dataLayer','GTM-NWNBM8');
+	    </script>
+<section id="Header">
+<nav class="navbar" role="navigation">
+<div class="accesskey">
+<a href="#" title="header" id="accesskeyU" accesskey="U">:::</a>
+</div>
+<div class="container">
+<div class="row">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#offcanvas-left"><span class="sr-only">Toggle navigation</span><i class="icon-menu"></i></button><a class="Logo" title="太平山森林遊樂區" href="mp?mp=1"><img class="img-responsive" src="public/LayoutDesign/1508470712620.png" alt="太平山森林遊樂區" title="太平山森林遊樂區"></a><button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#offcanvas-right"><span class="sr-only">Toggle navigation</span><i class="icon-down-open"></i></button>
+</div>
+<div class="collapse navbar-collapse" id="offcanvas-right" role="navigation">
+<div class="pull-sm-right pull-md-right pull-lg-right">
+<ul class="nav navbar-nav"><li class="active">
+    <a href="mp" title="回首頁" alt="回首頁">回首頁</a>
+</li>
+<li>
+    <a href="sitemap" title="網站導覽" alt="網站導覽" >網站導覽</a>
+</li>
+<li>
+    <a href="/TPSWeb/wSite/lp?ctNode=231&mp=1" title="常見問答" alt="常見問答">常見問答</a>
+</li>
+<li>
+    <a href="http://luodong.forest.gov.tw/suggestion" target="_blank" title="聯絡我們" alt="聯絡我們"">聯絡我們</a>
+</li>
+<li>
+    <a href="mp?mp=2" title="ENGLISH" alt="ENGLISH">ENGLISH</a>
+</li></ul>
+<div class="nav2"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script>
+google.load('search', '1', {language : 'zh-TW', style : google.loader.themes.GREENSKY});
+google.setOnLoadCallback(function() {
+google.search.CustomSearchControl.attachAutoCompletionWithOptions(
+ '008707198769018425610:e0nuhslqbds',
+ document.getElementById('q'),
+ 'qForm',
+ {'preferOnSubmitToSubmit': true});
+});
+</script>
+
+
+<script>
+   $( document ).ready( function() {
+        loadTemperature();
+    });
+
+    function loadTemperature(){
+        $.ajax({  
+             type: "POST",  
+             url: "/TPSWeb/gipservice/LoadTemperature",   
+             dataType: "json",
+             data: {
+                 method: "tmp",
+             },
+             success: function(tmp){
+	       $('#temperature').html(tmp.TEMP + '°C');
+             }  
+        });  
+    }
+</script>
+<script>
+function submitSend(){
+    $('#siteSearchForm').submit();
+} // send()
+</script>
+<div class="Search">
+   <form class="navbar-form" role="search" name="siteSearchForm" id="siteSearchForm" method="get" action="/TPSWeb/wSite/sp">      
+       <div class="input-group">
+           <input type="hidden" name="xdUrl" value="/wSite/siteSearch.jsp" />
+           <input type="text" id="q" name="q" accesskey="S" class="form-control" placeholder="請輸入關鍵字"/>
+           <span class="input-group-btn">
+               <button type="button" class="btn" onclick="submitSend()" onkeypress="submitSend()">
+                   <span class="glyphicon glyphicon-search" name="send"/>
+               </button>
+           </span>            
+       </div>  
+   </form>
+</div>
+<div class="Social_icon">
+   <a href="https://zh-tw.facebook.com/tps100.forest" class="Facebook" target="_blank"><i class="icon-facebook"></i></a>
+   <a href="sp?xdUrl=/wSite/RSS.jsp" class="Rss" target="_blank"><i class="icon-rss"></i></a>
+   <a href="http://www.cwb.gov.tw/V7/forecast/entertainment/forest/" target="_blank" class="Temperature" id="temperature">0°C</a>
+</div></div>
+</div>
+</div>
+<div class="collapse navbar-collapse" id="offcanvas-left" role="navigation">
+<noscript>TAB標籤效果，如不執行不影響您資料瀏覽</noscript>
+<ul class="nav navbar-nav">
+<li class="dropdown">
+<a id="sub-menu" class="active dropdown-toggle" href="np?ctNode=216&mp=1&idPath=215_216" title="行前導覽" data-hover="dropdown" data-toggle="dropdown">行前導覽<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a id="sub-menu" href="np?ctNode=227&mp=1&idPath=215_216_227" title="開放時間">開放時間</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=228&mp=1&idPath=215_216_228" title="位置及交通">位置及交通</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=229&mp=1&idPath=215_216_229" title="收費資訊">收費資訊</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=371&mp=1&idPath=215_216_371" title="蹦蹦車即時資訊">蹦蹦車即時資訊</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=232&mp=1&idPath=215_216_232" title="生態旅遊守則">生態旅遊守則</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=230&mp=1&idPath=215_216_230" title="導覽申請">導覽申請</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=231&mp=1&idPath=215_216_231" title="常見問答">常見問答</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=292&mp=1&idPath=215_216_292" title="服務窗口">服務窗口</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=293&mp=1&idPath=215_216_293" title="緊急救護">緊急救護</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a id="sub-menu" class="active dropdown-toggle" href="np?ctNode=217&mp=1&idPath=215_217" title="認識太平山" data-hover="dropdown" data-toggle="dropdown">認識太平山<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a id="sub-menu" href="np?ctNode=233&mp=1&idPath=215_217_233" title="園區簡介">園區簡介</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=234&mp=1&idPath=215_217_234" title="餐宿服務">餐宿服務</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=235&mp=1&idPath=215_217_235" title="林業文史">林業文史</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=236&mp=1&idPath=215_217_236" title="自然生態">自然生態</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=237&mp=1&idPath=215_217_237" title="森動一世紀活動">森動一世紀活動</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=238&mp=1&idPath=215_217_238" title="榮譽與肯定">榮譽與肯定</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=239&mp=1&idPath=215_217_239" title="文創商品">文創商品</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=240&mp=1&idPath=215_217_240" title="影音平台">影音平台</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=241&mp=1&idPath=215_217_241" title="相簿集錦">相簿集錦</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=242&mp=1&idPath=215_217_242" title="下載專區">下載專區</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a id="sub-menu" class="active dropdown-toggle" href="np?ctNode=221&mp=1&idPath=215_221" title="迷人景點" data-hover="dropdown" data-toggle="dropdown">迷人景點<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a id="sub-menu" href="lp?ctNode=299&mp=1&idPath=215_221_299" title="全部景點">全部景點</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=274&mp=1&idPath=215_221_274" title="宜專一線">宜專一線</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=275&mp=1&idPath=215_221_275" title="土場">土場</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=294&mp=1&idPath=215_221_294" title="售驗票站">售驗票站</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=277&mp=1&idPath=215_221_277" title="鳩之澤溫泉">鳩之澤溫泉</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=278&mp=1&idPath=215_221_278" title="中間遊客中心">中間遊客中心</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=279&mp=1&idPath=215_221_279" title="白嶺巨木">白嶺巨木</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=280&mp=1&idPath=215_221_280" title="見晴懷古步道">見晴懷古步道</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=281&mp=1&idPath=215_221_281" title="太平山莊">太平山莊</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=284&mp=1&idPath=215_221_284" title="檜木原始林步道">檜木原始林步道</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=285&mp=1&idPath=215_221_285" title="鐵杉林自然步道">鐵杉林自然步道</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=282&mp=1&idPath=215_221_282" title="蹦蹦車">蹦蹦車</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=283&mp=1&idPath=215_221_283" title="茂興懷舊步道">茂興懷舊步道</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=295&mp=1&idPath=215_221_295" title="翠峰景觀道路">翠峰景觀道路</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=288&mp=1&idPath=215_221_288" title="翠峰湖環山步道">翠峰湖環山步道</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=287&mp=1&idPath=215_221_287" title="望洋山步道">望洋山步道</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=289&mp=1&idPath=215_221_289" title="台灣山毛櫸步道">台灣山毛櫸步道</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=297&mp=1&idPath=215_221_297" title="翠峰山屋">翠峰山屋</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a id="sub-menu" class="active dropdown-toggle" href="np?ctNode=218&mp=1&idPath=215_218" title="旅遊資訊" data-hover="dropdown" data-toggle="dropdown">旅遊資訊<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a id="sub-menu" href="np?ctNode=243&mp=1&idPath=215_218_243" title="氣候">氣候</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=244&mp=1&idPath=215_218_244" title="季節推薦">季節推薦</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=246&mp=1&idPath=215_218_246" title="主題之旅">主題之旅</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=247&mp=1&idPath=215_218_247" title="無障礙旅遊">無障礙旅遊</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=248&mp=1&idPath=215_218_248" title="遊程規劃">遊程規劃</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=249&mp=1&idPath=215_218_249" title="順遊景點">順遊景點</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=250&mp=1&idPath=215_218_250" title="策略聯盟">策略聯盟</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a id="sub-menu" class="active dropdown-toggle" href="np?ctNode=219&mp=1&idPath=215_219" title="訊息公告" data-hover="dropdown" data-toggle="dropdown">訊息公告<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a id="sub-menu" href="lp?ctNode=251&mp=1&idPath=215_219_251" title="最新消息">最新消息</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=252&mp=1&idPath=215_219_252" title="活動訊息">活動訊息</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=253&mp=1&idPath=215_219_253" title="永續環保">永續環保</a>
+</li>
+<li>
+<a id="sub-menu" href="http://luodong.forest.gov.tw/public-info" title="政府公開資訊, 另開新視窗." target="_blank">政府公開資訊</a>
+</li>
+<li>
+<a id="sub-menu" href="http://www.forest.gov.tw/policies" title="重大政策, 另開新視窗." target="_blank">重大政策</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=256&mp=1&idPath=215_219_256" title="就業情報站">就業情報站</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a id="sub-menu" class="active dropdown-toggle" href="np?ctNode=220&mp=1&idPath=215_220" title="線上訂房" data-hover="dropdown" data-toggle="dropdown">線上訂房<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a id="sub-menu" href="https://tpsr.forest.gov.tw" title="馬上訂房, 另開新視窗." target="_blank">馬上訂房</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=258&mp=1&idPath=215_220_258" title="環保旅館">環保旅館</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=368&mp=1&idPath=215_220_368" title="房型介紹">房型介紹</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=259&mp=1&idPath=215_220_259" title="訂房說明">訂房說明</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=260&mp=1&idPath=215_220_260" title="會議假期">會議假期</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<a onfocus="mlout();" href="javascript:"></a>
+</div>
+</div>
+</nav>
+</section>
+<section class="IndexSlide">
+<div class="pic">
+<a href="#"><img class="img-responsive" src="public/Data/f1477443888261.jpg" title="鳩之澤裸湯" alt="鳩之澤裸湯">
+<div class="caption">鳩之澤裸湯</div>
+</img></a>
+</div>
+<div class="pic">
+<a href="#"><img class="img-responsive" src="public/Data/f1477443572057.jpg" title="翠峰銀河" alt="翠峰銀河">
+<div class="caption">翠峰銀河</div>
+</img></a>
+</div>
+<div class="pic">
+<a href="ct?xItem=2972&ctNode=288&mp=1"><img class="img-responsive" src="public/Data/f1467045719501.jpg" title="翠峰湖" alt="翠峰湖">
+<div class="caption">翠峰湖</div>
+</img></a>
+</div>
+<div class="pic">
+<a href="ct?xItem=2965&ctNode=281&mp=1"><img class="img-responsive" src="public/Data/f1463556364674.jpg" title="坐擁於煙雲山嵐的太平山莊" alt="坐擁於煙雲山嵐的太平山莊">
+<div class="caption">坐擁於煙雲山嵐的太平山莊</div>
+</img></a>
+</div>
+<div class="pic">
+<a href="ct?xItem=4096&ctNode=244&mp=1"><img class="img-responsive" src="public/Data/f1463294191756.jpg" title="紫葉槭" alt="紫葉槭">
+<div class="caption">紫葉槭</div>
+</img></a>
+</div>
+<div class="pic">
+<a href=""><img class="img-responsive" src="public/Data/f1463294156289.jpg" title="雲海咖啡館" alt="雲海咖啡館">
+<div class="caption">雲海咖啡館</div>
+</img></a>
+</div>
+<div class="pic">
+<a href="ct?xItem=2969&ctNode=282&mp=1"><img class="img-responsive" src="public/Data/f1453706380568.jpg" title="蹦蹦車舊鐵軌" alt="蹦蹦車舊鐵軌">
+<div class="caption">蹦蹦車舊鐵軌</div>
+</img></a>
+</div>
+<div class="pic">
+<a href="ct?xItem=2973&ctNode=287&mp=1"><img class="img-responsive" src="public/Data/f1453706501624.jpg" title="望洋山曙光" alt="望洋山曙光">
+<div class="caption">望洋山曙光</div>
+</img></a>
+</div>
+</section>
+<section id="MainContent" class="Index">
+<div class="accesskey">
+<a href="#MainContent" id="accesskeyC" accesskey="C" title="中央內容區塊">
+					        :::
+					    </a>
+</div>
+<div class="Block1">
+<div class="container">
+<div class="row">
+<div id="container">
+<noscript>請以左右鍵切換最新消息、活動訊息之頁籤，切換至 [活動訊息] 時，請使用ENTER鍵，切換至活動訊息條列內容。TAB標籤效果，如不執行不影響您資料瀏覽</noscript>
+<div class="col-sm-6 col-md-7 col-lg-7">
+<div class="Tab" id="tabpanel_1">
+<div class="tabs tabs1">
+<a href="#tab1" id="Focustab1" onfocus="javascript:Focus('Focustab1');">最新消息</a>
+</div>
+<div id="tab1" class="tab_container">
+<noscript>最新消息</noscript>
+<ul>
+<li>
+<span class="MetaTime">2018/09/19</span><a href="https://tps.forest.gov.tw/TPSWeb/wSite/ct?xItem=4820&ctNode=371&mp=1" title="太平山蹦蹦車售票資訊查詢">太平山蹦蹦車售票資訊查詢</a>
+</li>
+<li>
+<span class="MetaTime">2018/09/10</span><a href="ct?xItem=4784&ctNode=251&mp=1" title="太平山&ldquo;蹦&rdquo;然心動的邀約‧2018蹦蹦車復駛活動">太平山&ldquo;蹦&rdquo;然心動的邀約‧2018蹦蹦車復駛活動</a>
+</li>
+<li>
+<span class="MetaTime">2018/08/31</span><a href="ct?xItem=4781&ctNode=251&mp=1" title="《霧林之歌-宜蘭古道自然發現史》新書發表會">《霧林之歌-宜蘭古道自然發現史》新書發表會</a>
+</li>
+<li class="hidden-xs">
+<span class="MetaTime">2018/01/07</span><a href="ct?xItem=4685&ctNode=251&mp=1" title="太平山最新動態消息 都在官方FB粉絲團 歡迎加入唷！">太平山最新動態消息 都在官方FB粉絲團 歡迎加入唷！</a>
+</li>
+<li class="hidden-xs">
+<span class="MetaTime">2018/07/30</span><a href="ct?xItem=4774&ctNode=251&mp=1" title="防疫不可鬆懈 森林遊樂區維持犬貓禁入 (自107年8月1日至109年7月31日)">防疫不可鬆懈 森林遊樂區維持犬貓禁入 (自107年8月1日至109年7月31日)</a>
+</li>
+</ul>
+<div class="More">
+<a title="更多" href="np?ctNode=251&mp=1"><i class="icon-angle-circled-right"></i>
+<noscript>最新消息&nbsp;</noscript>更多</a>
+</div>
+</div>
+<div class="tabs tabs2">
+<a href="#tab2" id="Focustab2" onfocus="javascript:Focus('Focustab2');">活動訊息</a>
+</div>
+<div id="tab2" class="tab_container">
+<noscript>活動訊息</noscript>
+<ul>
+<li>
+<span class="MetaTime">2018/08/31</span><a href="ct?xItem=4779&ctNode=252&mp=1" title="2018 第四季 觀星活動">2018 第四季 觀星活動</a>
+</li>
+<li>
+<span class="MetaTime">2016/08/22</span><a href="ct?xItem=4392&ctNode=252&mp=1" title="太平山活動日曆">太平山活動日曆</a>
+</li>
+<li>
+<span class="MetaTime">2018/01/05</span><a href="ct?xItem=4683&ctNode=252&mp=1" title="羅東林區管理處 「山中歲月‧太平時光」老照片徵集活動~持續募集中喔!">羅東林區管理處 「山中歲月‧太平時光」老照片徵集活動~持續募集中喔!</a>
+</li>
+<li class="hidden-xs">
+<span class="MetaTime">2018/06/27</span><a href="ct?xItem=4761&ctNode=252&mp=1" title="2018 太平山 泰雅藝術季">2018 太平山 泰雅藝術季</a>
+</li>
+<li class="hidden-xs">
+<span class="MetaTime">2018/06/27</span><a href="ct?xItem=4760&ctNode=252&mp=1" title="原6月16日(六)夜觀貓頭鷹活動，調整至6月30日(六)">原6月16日(六)夜觀貓頭鷹活動，調整至6月30日(六)</a>
+</li>
+</ul>
+<div class="More">
+<a title="更多" href="np?ctNode=252&mp=1"><i class="icon-angle-circled-right"></i>
+<noscript>活動訊息&nbsp;</noscript>更多</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-md-5 col-lg-5">
+
+<script>
+   $( document ).ready( function() {
+        loadParkOpenStatus();
+    });
+
+    function loadParkOpenStatus(){  
+        jQuery.ajax({  
+             type: "POST",  
+             url: "/TPSWeb/gipservice/LoadParkOpenStatus",   
+             dataType: "json",
+             data: {
+                 mpId: "1"
+             },
+             success: function(msg){   
+                 if(msg.status =='01'){
+                	 $('#block').hide();
+                 }else{
+                	 $('#block').show();
+                 }
+
+                 if(msg.status =='01'){
+                	 $('#openStatus').text(msg.mvalue);
+                 }else if(msg.begin != '' || msg.end !='' ){
+                	 $('#openStatus').text(msg.mvalue + '(' + msg.begin + '~' + msg.end +')');
+                 }else{
+                	 $('#openStatus').text(msg.mvalue);
+                 }
+             }  
+        });  
+    }
+
+</script>
+<div class="Opentime"> 園區開放狀態：<i id="block" class="icon-block"></i><span id="openStatus"></span> </div>
+<div class="Status">
+	<a href="lp?ctNode=269">據點開放狀態<i class="icon-right-2"></i></a>
+	<a href="lp?ctNode=268">步道開放狀態<i class="icon-right-2"></i></a>
+</div>
+<div class="Topic">
+<a href="np?ctNode=264" class="Travel">輕旅行</a>
+<a href="np?ctNode=265" class="Indeh">深度旅遊</a>   
+<a href="http://tpsr.forest.gov.tw/TPSOrder/wSite/index.do?action=indexPage" class="Booking">線上訂房</a>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="Block3">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<div class="Video">
+<h2 class="BlockTitle">推薦影音</h2>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="100%" src="https://www.youtube.com/embed/koPCGI-vS3Y?wmode=opaque" frameborder="0" allowfullscreen="" title="雲煙山林畫太平 太平山國家森林遊樂區簡介影片(2011)"></iframe>
+</div>
+<h3 class="Contenttitle">
+<a href="ct?xItem=3030&ctNode=240&mp=1">雲煙山林畫太平 太平山國家森林遊樂區簡介影片(2011)</a>
+</h3>
+<p>
+<a href="ct?xItem=3030&ctNode=240&mp=1">資料來源:農業委員會 影片說明: 太平山國家森林遊樂區簡介...
+            </a>
+</p>
+<div class="More">
+<a href="np?ctNode=240&mp=1"><i class="icon-angle-circled-right"></i>更多</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+<h2 class="BlockTitle">本季推薦景點</h2>
+<div class="TopicTravel">
+<div class="Topic">
+<div class="pic">
+<a href="ct?xItem=2973&ctNode=287&mp=1"><img src="public/Data/f1453703422007.jpg" alt="翠峰湖-望洋山步道" class="img-responsive" title="翠峰湖-望洋山步道"></a>
+</div>
+<h3 class="Contenttitle">
+<a href="ct?xItem=2973&ctNode=287&mp=1">翠峰湖-望洋山步道</a>
+</h3>
+<p>
+<a href="ct?xItem=2973&ctNode=287&mp=1">望洋山位於中央山脈東北端, 在翠峰湖週遭的山系中海拔高度僅次於三星山,其海拔標高為2050M。循著步道登上望洋山, 在眼前展現的是大元山、水源山、桐山、下銅山......, 似乎能將層層山巒懷抱於胸臆之中; 若在天氣清朗時不僅能遠眺蘭陽平原, 就連座落太平洋的龜山島都清晰可辨。...
+                </a>
+</p>
+</div>
+<div class="Topic">
+<div class="pic">
+<a href="ct?xItem=2964&ctNode=280&mp=1"><img src="public/Data/f1463563010208.jpg" alt="見晴懷古步道" class="img-responsive" title="見晴懷古步道"></a>
+</div>
+<h3 class="Contenttitle">
+<a href="ct?xItem=2964&ctNode=280&mp=1">見晴懷古步道</a>
+</h3>
+<p>
+<a href="ct?xItem=2964&ctNode=280&mp=1">見晴，景如其名。 久雨初晴之際可遠眺蘭陽平原，及奇峰崢嶸的聖稜線；午后常有瑰麗如詩的雲海，有時久陷白茫茫的霧中，反而湧起渴望見晴的心情。...
+                </a>
+</p>
+</div>
+<div class="Topic">
+<div class="pic">
+<a href="ct?xItem=2968&ctNode=285&mp=1"><img src="public/Data/f1467217849612.jpg" alt="鐵杉林自然步道" class="img-responsive" title="鐵杉林自然步道"></a>
+</div>
+<h3 class="Contenttitle">
+<a href="ct?xItem=2968&ctNode=285&mp=1">鐵杉林自然步道</a>
+</h3>
+<p>
+<a href="ct?xItem=2968&ctNode=285&mp=1">全長1.3公里的鐵杉林步道來回約需2小時，沿途古木參天、蓊鬱蔽日、空氣氤氳，富含豐沛的芬多精，是條略帶挑戰性的高山森林步道，步道終點的觀景平台是全程的最高點，也是賞雲海、觀夕照的絕佳位置。...
+                </a>
+</p>
+</div>
+</div>
+<div class="More">
+<a href="np?ctNode=262&mp=1"><i class="icon-angle-circled-right"></i>更多</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="Block4">
+<div class="container">
+<div class="row">
+<h2 class="BlockTitle col-md-12 col-lg-12">相關連結</h2>
+<div class="BannerSlide col-lg-12">
+<div class="Banner">
+<a Target="_blank" href="http://luodong.forest.gov.tw"><img src="public/Data/f1462438549530.png" title="羅東林區管理處" alt="羅東林區管理處"></a>
+</div>
+<div class="Banner">
+<a Target="_blank" href="http://www.forest.gov.tw"><img src="public/Data/f1462439298832.png" title="農委會林務局" alt="農委會林務局"></a>
+</div>
+<div class="Banner">
+<a Target="_blank" href="http://yuanshan-elc.blogspot.tw"><img src="public/Data/f1462438847242.png" title="員山生態教育館" alt="員山生態教育館"></a>
+</div>
+<div class="Banner">
+<a Target="_blank" href="http://luodong-nec.blogspot.tw"><img src="public/Data/f1462438580689.png" title="羅東自然教育中心" alt="羅東自然教育中心"></a>
+</div>
+<div class="Banner">
+<a Target="_blank" href="http://culturalpark.forest.gov.tw"><img src="public/Data/f1462438932962.png" title="林業文化園區" alt="林業文化園區"></a>
+</div>
+<div class="Banner">
+<a Target="_blank" href="https://www.facebook.com/fb.yuanshan"><img src="public/Data/f1462438367876.png" title="員山生態教育館粉絲團" alt="員山生態教育館粉絲團"></a>
+</div>
+<div class="Banner">
+<a Target="_blank" href="https://www.facebook.com/ecocenter.nanao"><img src="public/Data/f1462438386819.png" title="南澳生態教育館粉絲團" alt="南澳生態教育館粉絲團"></a>
+</div>
+<div class="Banner">
+<a Target="_blank" href="https://www.facebook.com/mangroveecocenter"><img src="public/Data/f1462438402532.png" title="紅樹林生態教育館粉絲團" alt="紅樹林生態教育館粉絲團"></a>
+</div>
+<div class="Banner">
+<a Target="_blank" href="https://www.facebook.com/tps100.forest"><img src="public/Data/f1462438142188.png" title="太平山國家森林遊樂區 粉絲團" alt="太平山國家森林遊樂區 粉絲團"></a>
+</div>
+<div class="Banner">
+<a Target="_blank" href="https://www.facebook.com/luodong"><img src="public/Data/f1462438159536.png" title="羅東自然教育中心粉絲團" alt="羅東自然教育中心粉絲團"></a>
+</div>
+<div class="Banner">
+<a Target="_blank" href="http://recreation.forest.gov.tw"><img src="public/Data/f1462438777724.png" title="山林悠遊網" alt="山林悠遊網"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="FatFooter" class="FatFooter">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<ul>
+<li>
+<a href="np?ctNode=216&mp=1&idPath=215_216" title="行前導覽">行前導覽</a>
+<ul>
+<li>
+<a id="sub-menu" href="np?ctNode=227&mp=1&idPath=215_216_227" title="開放時間">開放時間</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=228&mp=1&idPath=215_216_228" title="位置及交通">位置及交通</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=229&mp=1&idPath=215_216_229" title="收費資訊">收費資訊</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=371&mp=1&idPath=215_216_371" title="蹦蹦車即時資訊">蹦蹦車即時資訊</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=232&mp=1&idPath=215_216_232" title="生態旅遊守則">生態旅遊守則</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=230&mp=1&idPath=215_216_230" title="導覽申請">導覽申請</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=231&mp=1&idPath=215_216_231" title="常見問答">常見問答</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=292&mp=1&idPath=215_216_292" title="服務窗口">服務窗口</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=293&mp=1&idPath=215_216_293" title="緊急救護">緊急救護</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="np?ctNode=217&mp=1&idPath=215_217" title="認識太平山">認識太平山</a>
+<ul>
+<li>
+<a id="sub-menu" href="np?ctNode=233&mp=1&idPath=215_217_233" title="園區簡介">園區簡介</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=234&mp=1&idPath=215_217_234" title="餐宿服務">餐宿服務</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=235&mp=1&idPath=215_217_235" title="林業文史">林業文史</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=236&mp=1&idPath=215_217_236" title="自然生態">自然生態</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=237&mp=1&idPath=215_217_237" title="森動一世紀活動">森動一世紀活動</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=238&mp=1&idPath=215_217_238" title="榮譽與肯定">榮譽與肯定</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=239&mp=1&idPath=215_217_239" title="文創商品">文創商品</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=240&mp=1&idPath=215_217_240" title="影音平台">影音平台</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=241&mp=1&idPath=215_217_241" title="相簿集錦">相簿集錦</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=242&mp=1&idPath=215_217_242" title="下載專區">下載專區</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="np?ctNode=221&mp=1&idPath=215_221" title="迷人景點">迷人景點</a>
+<ul>
+<li>
+<a id="sub-menu" href="lp?ctNode=299&mp=1&idPath=215_221_299" title="全部景點">全部景點</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=274&mp=1&idPath=215_221_274" title="宜專一線">宜專一線</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=275&mp=1&idPath=215_221_275" title="土場">土場</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=294&mp=1&idPath=215_221_294" title="售驗票站">售驗票站</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=277&mp=1&idPath=215_221_277" title="鳩之澤溫泉">鳩之澤溫泉</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=278&mp=1&idPath=215_221_278" title="中間遊客中心">中間遊客中心</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=279&mp=1&idPath=215_221_279" title="白嶺巨木">白嶺巨木</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=280&mp=1&idPath=215_221_280" title="見晴懷古步道">見晴懷古步道</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=281&mp=1&idPath=215_221_281" title="太平山莊">太平山莊</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=284&mp=1&idPath=215_221_284" title="檜木原始林步道">檜木原始林步道</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=285&mp=1&idPath=215_221_285" title="鐵杉林自然步道">鐵杉林自然步道</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=282&mp=1&idPath=215_221_282" title="蹦蹦車">蹦蹦車</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=283&mp=1&idPath=215_221_283" title="茂興懷舊步道">茂興懷舊步道</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=295&mp=1&idPath=215_221_295" title="翠峰景觀道路">翠峰景觀道路</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=288&mp=1&idPath=215_221_288" title="翠峰湖環山步道">翠峰湖環山步道</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=287&mp=1&idPath=215_221_287" title="望洋山步道">望洋山步道</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=289&mp=1&idPath=215_221_289" title="台灣山毛櫸步道">台灣山毛櫸步道</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=297&mp=1&idPath=215_221_297" title="翠峰山屋">翠峰山屋</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="np?ctNode=218&mp=1&idPath=215_218" title="旅遊資訊">旅遊資訊</a>
+<ul>
+<li>
+<a id="sub-menu" href="np?ctNode=243&mp=1&idPath=215_218_243" title="氣候">氣候</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=244&mp=1&idPath=215_218_244" title="季節推薦">季節推薦</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=246&mp=1&idPath=215_218_246" title="主題之旅">主題之旅</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=247&mp=1&idPath=215_218_247" title="無障礙旅遊">無障礙旅遊</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=248&mp=1&idPath=215_218_248" title="遊程規劃">遊程規劃</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=249&mp=1&idPath=215_218_249" title="順遊景點">順遊景點</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=250&mp=1&idPath=215_218_250" title="策略聯盟">策略聯盟</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="np?ctNode=219&mp=1&idPath=215_219" title="訊息公告">訊息公告</a>
+<ul>
+<li>
+<a id="sub-menu" href="lp?ctNode=251&mp=1&idPath=215_219_251" title="最新消息">最新消息</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=252&mp=1&idPath=215_219_252" title="活動訊息">活動訊息</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=253&mp=1&idPath=215_219_253" title="永續環保">永續環保</a>
+</li>
+<li>
+<a id="sub-menu" href="http://luodong.forest.gov.tw/public-info" title="政府公開資訊, 另開新視窗." target="_blank">政府公開資訊</a>
+</li>
+<li>
+<a id="sub-menu" href="http://www.forest.gov.tw/policies" title="重大政策, 另開新視窗." target="_blank">重大政策</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=256&mp=1&idPath=215_219_256" title="就業情報站">就業情報站</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="np?ctNode=220&mp=1&idPath=215_220" title="線上訂房">線上訂房</a>
+<ul>
+<li>
+<a id="sub-menu" href="https://tpsr.forest.gov.tw" title="馬上訂房, 另開新視窗." target="_blank">馬上訂房</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=258&mp=1&idPath=215_220_258" title="環保旅館">環保旅館</a>
+</li>
+<li>
+<a id="sub-menu" href="lp?ctNode=368&mp=1&idPath=215_220_368" title="房型介紹">房型介紹</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=259&mp=1&idPath=215_220_259" title="訂房說明">訂房說明</a>
+</li>
+<li>
+<a id="sub-menu" href="np?ctNode=260&mp=1&idPath=215_220_260" title="會議假期">會議假期</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<a onfocus="mlout();" href="javascript:"></a>
+<noscript>TAB標籤效果，如不執行不影響您資料瀏覽</noscript>
+<section id="Footer">
+<div class="container">
+<div class="row">
+<div class="col-md-9"><div class="Footer_link">
+<a href="ct?xItem=3201&ctNode=270&mp=1" title="政府網站資料開放宣告">政府網站資料開放宣告</a>
+<a href="ct?xItem=3163&ctNode=271&mp=1" title="隱私權保護政策">隱私權保護政策</a>
+<a href="ct?xItem=3164&ctNode=272&mp=1" title="網站安全政策">網站安全政策</a>
+<a href="lp?ctNode=273" title="相關連結">相關連結</a>
+<a href="ct?xItem=2997&ctNode=228&mp=1" title="位置及交通">位置及交通</a>
+</div><div class="Footer_info">
+<div class="Address">開放時間：例假日AM 4:00~PM 8:00   非假日 AM 6:00~PM 8:00 <br>地址：267臺灣宜蘭縣大同鄉太平巷58之1號</div>
+<div class="Phone">服務專線：太平山莊 03-9809806 / 售票站 03-9809619 / 鳩之澤 03-9809603</div>
+<div class="Resolution">瀏覽本站建議使用瀏覽器 Google Chrome、FireFox、或Internet Explorer 9.0 以上</div>
+<div class="Copyright">羅東林區管理處  版權所有 © 2016 All Rights Reserved</div></div></div>
+<div class="col-md-3">
+<div class="Counter">瀏覽人次：5589720</div>
+<div class="UpdateTime">更新日期：2018年09月18日</div>
+<div class="Footer_icon">
+<a href="http://www.forest.gov.tw/" target="_blank" title="林務局"><img src="images/forest_icon.png" alt="林務局"></a><a href="#" title="環保標章"><img src="images/environment_icon.png" alt="環保標章"></a><a href="#" title="禁止吸菸"><img src="images/nosmoking_icon.png" alt="禁止吸菸"></a><a target="_blank" class="Egov" href="
+	                        http://www.gov.tw/
+	                    " title="E-gov"><img src="images/egov.png" alt="E-gov" title="E-gov"></a><a target="_blank" class="Accessible_icon" href="http://www.handicap-free.nat.gov.tw/Applications/Detail?category=20160804133731" title="通過A+等級無障礙網頁檢測, 另開新視窗."><img src="images/aplus.jpg" alt="通過A+等級無障礙網頁檢測, 另開新視窗." title="通過A+等級無障礙網頁檢測, 另開新視窗."></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<noscript>TAB標籤效果，如不執行不影響您資料瀏覽</noscript>
+<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-73883985-1', 'auto');
+		  ga('send', 'pageview');
+		
+		</script>
+</body>
+</html>

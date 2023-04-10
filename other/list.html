@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="../assets/module/bootstrap-3.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Bootstrap margin-top自訂CSS -->		
+		<link rel="stylesheet" href="../assets/css/offcanvas.css">
+		
+		<!-- slick 輪播-->
+		<link rel="stylesheet" href="../assets/module/slick/slick.css">
+		<link rel="stylesheet" href="../assets/module/slick/slick-theme.css">
+		<!-- slick 輪播自訂CSS -->
+		<link rel="stylesheet" href="../css/slick-slide.css">
+		<!-- 自訂CSS -->
+		<link rel="stylesheet" href="../css/customize.css">
+		<script>jQuery.noConflict();</script>
+
+	</head>
+	<body>
+		<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Title</a>
+				</div>
+			
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Link</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+		
+		<div class="container">
+			<div class="row row-offcanvas row-offcanvas-right">
+				<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+					<div class="list-group">
+						<a href="#slide" class="list-group-item active">大圖廣告輪播</a>
+						<a href="#" class="list-group-item">選單</a>
+						<a href="../form.html" class="list-group-item">查詢/輸入框</a>
+						<a href="../list.html" class="list-group-item">最新消息</a>
+						<a href="../calendar.html" class="list-group-item">行事曆</a>
+						<a href="../footer.html" class="list-group-item">footer</a>
+						<a href="../banner.html" class="list-group-item">小廣告相關連結</a>
+						<a href="#" class="list-group-item">Link</a>
+						<a href="#" class="list-group-item">Link</a>
+						<a href="#" class="list-group-item">Link</a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-9">
+					<div class="row">
+						<!-- list -->
+						<section id="list" class="list col-xs-12 col-lg-12">
+							<h3>最新消息列表</h3>
+							<h4>list1</h4>
+							<div class="list1">
+								<div class="row">
+									<ul>
+										<li>
+											<div class="meta pull-left"><span class="meta-time">2014-09-30</span><span class="meta-dep"><a href="#">發布單位</a></span></div>
+											<a href="#">苗栗縣2014士子開中門活動報名人數累計苗栗縣</a>
+										</li>
+										<li>
+											<div class="meta pull-left"><span class="meta-time">2014-09-30</span><span class="meta-dep"><a href="#">發布單位</a></span></div>
+											<a href="#">苗栗縣2014士子開中門活動報名人數累計苗栗縣</a>
+										</li>
+										<li>
+											<div class="meta pull-left"><span class="meta-time">2014-09-30</span><span class="meta-dep"><a href="#">發布單位</a></span></div>
+											<a href="#">苗栗縣2014士子開中門活動報名人數累計苗栗縣</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<hr>
+							<h4>list2</h4>
+							<div class="list2">
+								<div class="row">
+									<ul>
+										<li>
+											<div class="meta pull-left"><span class="meta-time">2014-09-30</span><span class="meta-dep"><a href="#">發布單位</a></span></div>
+											<a href="#">苗栗縣2014士子開中門活動報名人數累計苗栗縣</a>
+											<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。教育部希冀透過本研習，讓初任教師瞭解國家社會對於教師的期盼，以及身為教師的使命，並進行典範教師經驗傳承與交流，導引初任教師積極投入教育志業。教育部鑑於每年有數千位初任教師投身教育現場，雖然修畢教育學程、經過教育實習，但成為正式教師後，仍將面臨學校...</p>
+										</li>
+										<li>
+											<div class="meta pull-left"><span class="meta-time">2014-09-30</span><span class="meta-dep"><a href="#">發布單位</a></span></div>
+											<a href="#">苗栗縣2014士子開中門活動報名人數累計苗栗縣</a>
+											<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。教育部希冀透過本研習，讓初任教師瞭解國家社會對於教師的期盼，以及身為教師的使命，並進行典範教師經驗傳承與交流，導引初任教師積極投入教育志業。教育部鑑於每年有數千位初任教師投身教育現場，雖然修畢教育學程、經過教育實習，但成為正式教師後，仍將面臨學校...</p>
+										</li>
+										<li>
+											<div class="meta pull-left"><span class="meta-time">2014-09-30</span><span class="meta-dep"><a href="#">發布單位</a></span></div>
+											<a href="#">苗栗縣2014士子開中門活動報名人數累計苗栗縣</a>
+											<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。教育部希冀透過本研習，讓初任教師瞭解國家社會對於教師的期盼，以及身為教師的使命，並進行典範教師經驗傳承與交流，導引初任教師積極投入教育志業。教育部鑑於每年有數千位初任教師投身教育現場，雖然修畢教育學程、經過教育實習，但成為正式教師後，仍將面臨學校...</p>
+										</li>
+									</ul>
+								</div>
+							</div>	
+							<hr>	
+							<h4>list3 : col寫法，可以自適應</h4>			
+							<div class="list3">
+								<div class="row">
+									<div class="pull-left col-xs-12 col-md-3">
+										<img class="img-responsive" src="../images/01.jpg" alt="Image">
+									</div>
+									<div class="col-xs-12 col-md-9">
+										<h4 class="media-heading">Media heading 標題標題標題標題</h4>
+										<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。教育部希冀透過本研習，讓初任教師瞭解國家社會對於教師的期盼，以及身為教師的使命，並進行典範教師經驗傳承與交流，導引初任教師積極投入教育志業。教育部鑑於每年有數千位初任教師投身教育現場，雖然修畢教育學程、經過教育實習，但成為正式教師後，仍將面臨學校...<a href="#">more</a></p>
+									</div>
+								</div>
+							</div>
+							<hr>
+							<h4>list4 : col寫法，可以自適應</h4>	
+							<div class="list4">
+								<div class="row">
+									<div class="pull-right col-xs-12 col-md-3">
+										<img class="img-responsive" src="../images/01.jpg" alt="Image">
+									</div>
+									<div class="col-xs-12 col-md-9">
+										<h4 class="media-heading">Media heading 標題標題標題標題</h4>
+										<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。教育部希冀透過本研習，讓初任教師瞭解國家社會對於教師的期盼，以及身為教師的使命，並進行典範教師經驗傳承與交流，導引初任教師積極投入教育志業。教育部鑑於每年有數千位初任教師投身教育現場，雖然修畢教育學程、經過教育實習，但成為正式教師後，仍將面臨學校...<a href="#">more</a></p>
+									</div>
+								</div>	
+							</div>
+							<hr>
+							<h4>list5</h4>	
+							<div class="list5">
+								<div class="media">				
+									<div class="media-body">
+										<h4 class="media-heading">Media heading 標題標題標題標題</h4>
+										<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。教育部希冀透過本研習，讓初任教師瞭解國家社會對於教師的期盼，以及身為教師的使命，並進行典範教師經驗傳承與交流，導引初任教師積極投入教育志業。教育部鑑於每年有數千位初任教師投身教育現場，雖然修畢教育學程、經過教育實習，但成為正式教師後，仍將面臨學校...<a href="#">more</a></p>
+									</div>
+								</div>	
+							</div>
+							<hr>
+							<h4>list6 : Bootstrap list-group 原生列表 ul li 的寫法 </h4>
+							<div class="list6">								
+								<ul class="list-group">
+									<li class="list-group-item">免费域名注册</li>
+									<li class="list-group-item">免费 Window 空间托管</li>
+									<li class="list-group-item">图像的数量</li>
+									<li class="list-group-item">
+										<span class="badge">2014-09-30</span><span class="badge">發布單位</span>
+								 		图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量图像的数量
+									</li>
+								 	<li class="list-group-item">每年更新成本</li>
+									<li class="list-group-item">
+								  		<span class="badge">新</span>
+								 		折扣优惠
+									</li>
+								</ul>
+								<h4> : Bootstrap list-group 原生列表 a 的寫法</h4>
+								<div class="list-group">
+									<a href="#" class="list-group-item active">
+										<h4 class="list-group-item-heading">
+											入门网站包
+										</h4>
+									</a>
+									<a href="#" class="list-group-item">
+									 	<h4 class="list-group-item-heading">
+											免费域名注册
+										</h4>
+										<p class="list-group-item-text">
+											您将通过网页进行免费域名注册。
+										</p>
+									</a>
+									<a href="#" class="list-group-item">
+									 	<h4 class="list-group-item-heading">
+											免费域名注册
+										</h4>
+										<p class="list-group-item-text">
+											您将通过网页进行免费域名注册。
+										</p>
+									</a>
+								</div>
+							</div>
+							<hr>
+							<h4>list7 : Bootstrap list-group media 寫法，適合留言板</h4>
+							<div class="list7">
+								<div class="media">
+									<a class="pull-right " href="#">
+										<img class="media-object " src="../images/s01.jpg" alt="Image">
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">Media heading 標題標題標題標題</h4>
+										<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。教育部希冀透過本研習，讓初任教師瞭解國家社會對於教師的期盼，以及身為教師的使命，並進行典範教師經驗傳承與交流，導引初任教師積極投入教育志業。教育部鑑於每年有數千位初任教師投身教育現場，雖然修畢教育學程、經過教育實習，但成為正式教師後，仍將面臨學校...<a href="#">more</a></p>
+									</div>
+								</div>	
+							</div>
+							<hr>
+							<h4>list8 : Bootstrap list-group media 寫法，適合留言板</h4>
+							<div class="list8">
+								<div class="media">
+									<a class="pull-left" href="#">
+										<img class="media-object" src="../images/s01.jpg" alt="Image">
+									</a>
+									<div class="media-body">
+										<h4 class="media-heading">Media heading 標題標題標題標題</h4>
+										<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。教育部希冀透過本研習，讓初任教師瞭解國家社會對於教師的期盼，以及身為教師的使命，並進行典範教師經驗傳承與交流，導引初任教師積極投入教育志業。教育部鑑於每年有數千位初任教師投身教育現場，雖然修畢教育學程、經過教育實習，但成為正式教師後，仍將面臨學校...<a href="#">more</a></p>
+									</div>
+								</div>	
+							</div>
+							<hr>
+							<h4>list9 : Tab</h4>
+							<div class="list9">
+								<ul class="nav nav-tabs" role="tablist" id="myTab">
+									<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+									<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+									<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+									<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+								</ul>
+
+								<div class="tab-content">
+									<div role="tabpanel" class="tab-pane active" id="home">
+										<div class="list3">
+											<div class="row">
+												<div class="pull-left col-xs-12 col-md-3">
+													<img class="img-responsive" src="../images/01.jpg" alt="Image">
+												</div>
+												<div class=" col-xs-12 col-md-9">
+													<h4 class="media-heading">Media heading 標題標題標題標題</h4>
+													<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。教育部希冀透過本研習，讓初任教師瞭解國家社會對於教師的期盼，以及身為教師的使命，並進行典範教師經驗傳承與交流，導引初任教師積極投入教育志業。教育部鑑於每年有數千位初任教師投身教育現場，雖然修畢教育學程、經過教育實習，但成為正式教師後，仍將面臨學校...<a href="#">more</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="profile">
+										<div class="list3">
+											<div class="row">
+												<div class="pull-right col-xs-12 col-md-3">
+													<img class="img-responsive" src="../images/01.jpg" alt="Image">
+												</div>
+												<div class="col-xs-12 col-md-9">
+													<h4 class="media-heading">Media heading 標題標題標題標題</h4>
+													<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。教育部希冀透過本研習，讓初任教師瞭解國家社會對於教師的期盼，以及身為教師的使命，並進行典範教師經驗傳承與交流，導引初任教師積極投入教育志業。教育部鑑於每年有數千位初任教師投身教育現場，雖然修畢教育學程、經過教育實習，但成為正式教師後，仍將面臨學校...<a href="#">more</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="messages">
+										<div class="list3">
+											<div class="row">
+												<div class="pull-left col-xs-12 col-md-3">
+													<img class="img-responsive" src="../images/01.jpg" alt="Image">
+												</div>
+												<div class="col-xs-12 col-md-9">
+													<h4 class="media-heading">Media heading 標題標題標題標題</h4>
+													<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。教育部希冀透過本研習，讓初任教師瞭解國家社會對於教師的期盼，以及身為教師的使命，並進行典範教師經驗傳承與交流，導引初任教師積極投入教育志業。教育部鑑於每年有數千位初任教師投身教育現場，雖然修畢教育學程、經過教育實習，但成為正式教師後，仍將面臨學校...<a href="#">more</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="settings">
+										<div class="list3">
+											<div class="row">
+												<div class="pull-right col-xs-12 col-md-3">
+													<img class="img-responsive" src="../images/01.jpg" alt="Image">
+												</div>
+												<div class=" col-xs-12 col-md-9">
+													<h4 class="media-heading">Media heading 標題標題標題標題</h4>
+													<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。教育部希冀透過本研習，讓初任教師瞭解國家社會對於教師的期盼，以及身為教師的使命，並進行典範教師經驗傳承與交流，導引初任教師積極投入教育志業。教育部鑑於每年有數千位初任教師投身教育現場，雖然修畢教育學程、經過教育實習，但成為正式教師後，仍將面臨學校...<a href="#">more</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<script>
+								$('#myTab a').click(function (e) {
+								  e.preventDefault()
+								  $(this).tab('show')
+								})
+								</script>
+							</div>
+							<hr>
+							<h4>list10 : Tab</h4>
+							<div class="list10">
+								<ul class="nav nav-pills" role="tablist" id="myTab2">
+									<li role="presentation" class="active"><a href="#home2" aria-controls="home" role="tab" data-toggle="tab">Home<span class="badge">42</span></a></li>
+									<li role="presentation"><a href="#profile2" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+									<li role="presentation"><a href="#messages2" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+									<li role="presentation"><a href="#settings2" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+								</ul>
+
+								<div class="tab-content">
+									<div role="tabpanel" class="tab-pane active" id="home2">
+										<div class="list3">
+											<div class="row">
+												<div class="pull-left col-xs-12 col-md-3">
+													<img class="img-responsive" src="../images/01.jpg" alt="Image">
+												</div>
+												<div class=" col-xs-12 col-md-9">
+													<h4 class="media-heading">Media heading 標題標題標題標題</h4>
+													<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。教育部希冀透過本研習，讓初任教師瞭解國家社會對於教師的期盼，以及身為教師的使命，並進行典範教師經驗傳承與交流，導引初任教師積極投入教育志業。教育部鑑於每年有數千位初任教師投身教育現場，雖然修畢教育學程、經過教育實習，但成為正式教師後，仍將面臨學校...<a href="#">more</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="profile2">
+										<div class="list3">
+											<div class="row">
+												<div class="pull-right col-xs-12 col-md-3">
+													<img class="img-responsive" src="../images/01.jpg" alt="Image">
+												</div>
+												<div class="col-xs-12 col-md-9">
+													<h4 class="media-heading">Media heading 標題標題標題標題</h4>
+													<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。教育部希冀透過本研習，讓初任教師瞭解國家社會對於教師的期盼，以及身為教師的使命，並進行典範教師經驗傳承與交流，導引初任教師積極投入教育志業。教育部鑑於每年有數千位初任教師投身教育現場，雖然修畢教育學程、經過教育實習，但成為正式教師後，仍將面臨學校...<a href="#">more</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="messages2">
+										<div class="list3">
+											<div class="row">
+												<div class="pull-left col-xs-12 col-md-3">
+													<img class="img-responsive" src="../images/01.jpg" alt="Image">
+												</div>
+												<div class="col-xs-12 col-md-9">
+													<h4 class="media-heading">Media heading 標題標題標題標題</h4>
+													<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。教育部希冀透過本研習，讓初任教師瞭解國家社會對於教師的期盼，以及身為教師的使命，並進行典範教師經驗傳承與交流，導引初任教師積極投入教育志業。教育部鑑於每年有數千位初任教師投身教育現場，雖然修畢教育學程、經過教育實習，但成為正式教師後，仍將面臨學校...<a href="#">more</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="settings2">
+										<div class="list3">
+											<div class="row">
+												<div class="pull-right col-xs-12 col-md-3">
+													<img class="img-responsive" src="../images/01.jpg" alt="Image">
+												</div>
+												<div class=" col-xs-12 col-md-9">
+													<h4 class="media-heading">Media heading 標題標題標題標題</h4>
+													<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。教育部希冀透過本研習，讓初任教師瞭解國家社會對於教師的期盼，以及身為教師的使命，並進行典範教師經驗傳承與交流，導引初任教師積極投入教育志業。教育部鑑於每年有數千位初任教師投身教育現場，雖然修畢教育學程、經過教育實習，但成為正式教師後，仍將面臨學校...<a href="#">more</a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<script>
+								$('#myTab2 a').click(function (e) {
+								  e.preventDefault()
+								  $(this).tab('show')
+								})
+								</script>
+							</div>
+							<hr>
+							<h4>list11 : Bootstrap Thumbnail 寫法</h4>
+							<div class="list11">
+								<div class="row">
+									<div class="col-sm-6 col-md-4">
+								 		<div class="thumbnail">
+											<img class="img-responsive" src="../images/01.jpg" alt="Image">
+											<div class="caption">
+												<h4>Thumbnail label</h4>
+												<div class="meta">
+													<div class="meta-time">2014-09-30</div>
+													<div class="meta-dep"><a href="#">發布單位</a></div>
+												</div>
+												<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。</p>
+												<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+								     			</div>
+								    		</div>
+								  	</div>
+								  	<div class="col-sm-6 col-md-4">
+								 		<div class="thumbnail">
+											<img class="img-responsive" src="../images/01.jpg" alt="Image">
+											<div class="caption">
+												<h4>Thumbnail label</h4>
+												<div class="meta">
+													<div class="meta-time">2014-09-30</div>
+													<div class="meta-dep"><a href="#">發布單位</a></div>
+												</div>
+												<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。</p>
+												<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+								     			</div>
+								    		</div>
+								  	</div>
+								  	<div class="col-sm-6 col-md-4">
+								 		<div class="thumbnail">
+											<img class="img-responsive" src="../images/01.jpg" alt="Image">
+											<div class="caption">
+												<h4>Thumbnail label</h4>
+												<div class="meta">
+													<div class="meta-time">2014-09-30</div>
+													<div class="meta-dep"><a href="#">發布單位</a></div>
+												</div>
+												<p>103級初任教師導入輔導知能研習將於明（11）日至15日，在全國11所師資培育大學舉辦29場，預計約有5,000名103學年度首次受聘為中等以下公立學校編制內正式教師參加。</p>
+												<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+								     			</div>
+								    		</div>
+								  	</div>
+								</div>
+							</div>
+						</section>						
+					</div>
+				</div>
+			</div>			
+		</div>
+		
+		<!-- jQuery -->
+		<script  src="../assets/js/jquery-1.11.2.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="../assets/module/bootstrap-3.3.2/js/bootstrap.min.js"></script>
+		<!-- slick  -->
+		<script src="../assets/module/slick/slick.js"></script> 	
+		<!-- slick 自訂 -->
+		<script src="../js/slick-addscripts.js"></script> 		
+	</body>
+</html>

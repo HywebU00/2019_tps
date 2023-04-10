@@ -1,0 +1,73 @@
+@import "_extend.scss"; 
+#Footer{
+	background: #696969;
+	padding-top: 30px;
+	.container{
+		color: #fff;
+		// font-size: $font1;
+		font-size: 0.938em;
+		.Footer_link{
+			margin-bottom: 30px;
+			a{
+				color: #fff;
+				white-space: nowrap;
+				display: inline-block;
+				&:after{
+					content: "|";
+					display: inline-block;
+					margin-right: 10px;
+					margin-left: 12px;
+					color:#b9b9b9;
+				}
+				&:last-child{
+					&:after{
+						content: "";
+					}
+				}
+			}
+		}
+		.Footer_info{
+			margin-bottom: 5px;
+		}
+		.Resolution,.Copyright{
+			// color: #b9b9b9;
+			color: #EBEBEB;
+		}
+		.Counter{
+			margin-bottom: 5px;
+			text-align: right;
+		}
+		.UpdateTime{
+			text-align: right;
+			margin-bottom: 50px;
+		}
+		.Footer_icon{
+			text-align: right;
+		}
+	}	
+}
+@media  (max-width:992px) {
+	#Footer{
+		.container{
+			.Footer_link{
+				margin-bottom:15px;
+			}
+			.Counter{
+				margin-top: 10px;
+				margin-bottom: 5px;
+				text-align: left;
+				display: inline-block;
+			}
+			.UpdateTime{
+				text-align: left;
+				margin-bottom: 10px;
+				display: inline-block;
+				margin-left: 10px;
+			}
+			.Footer_icon{
+				text-align: left;
+
+			}
+		}
+	}
+}
